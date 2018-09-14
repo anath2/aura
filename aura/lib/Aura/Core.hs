@@ -33,13 +33,13 @@ import           Aura.Pkgbuild.Editing (hotEdit)
 import           Aura.Settings
 import           Aura.Types
 import           Aura.Utils
-import           BasePrelude hiding ((<>))
+import           BasePrelude hiding ((<>)) -- Using own implementation of greater than and less than
 import           Control.Compactable (fmapEither)
 import           Control.Monad.Freer
 import           Control.Monad.Freer.Error
 import           Control.Monad.Freer.Reader
 import           Control.Monad.Trans.Maybe
-import qualified Data.ByteString.Lazy.Char8 as BL
+import qualified Data.ByteString.Lazy.Char8 as BL -- Lookup import qualified
 import           Data.Generics.Product (field)
 import qualified Data.List.NonEmpty as NEL
 import           Data.Semigroup
